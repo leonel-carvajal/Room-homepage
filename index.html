@@ -12,19 +12,20 @@
 </head>
 <body>
   <main>
-    <h1>Room homepage</h1>
     <header class="header">
-      <nav class="navbar">
+      <nav class="navbar" id="navbar">
         <ul>
-          <li class="navbar-logo"><img src="/images/logo.svg" alt="Logo"></li>
           <li class="navbar-item">Home</li>
           <li class="navbar-item">Shop</li>
           <li class="navbar-item">About</li>
           <li class="navbar-item">Contact</li>
         </ul>
       </nav>
+      <div class="ham" id="ham"><img src="/images/icon-hamburger.svg" alt="icon-hamburger"></div>
+      <div class="logo"><img src="/images/logo.svg" alt="logo"></div>
     </header>
-    <section class="slider">
+    <section class="slider" id="slider">
+      <div class="modal" id="modal"></div>
       <div class="splide">
         <div class="splide__track">
           <ul class="splide__list">
@@ -64,6 +65,7 @@
         Make each room unique, or pick a cohesive theme that best express your interests and what
         inspires you. Find the furniture pieces you need, from traditional to contemporary styles
         or anything in between. Product specialists are available to help you create your dream space.</p>
+        <img src="/images/image-about-light.jpg" alt="image-about-light">
     </section>
   </main>
   <footer class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
