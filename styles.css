@@ -10,6 +10,14 @@ body{
   margin: 0;
   padding: 0;
 }
+body::-webkit-scrollbar{
+  width: 7px;
+  background-color: var(--Dark-Gray);
+}
+body::-webkit-scrollbar-thumb{
+  background-color: royalblue;
+  border-radius: 10px;
+}
 ul{
   padding-left: 0;
   margin-top: 0;
@@ -84,5 +92,94 @@ img{
     text-decoration: none;
     font-size: 0.9rem;
     color: purple;
+  }
+}
+@media screen and (min-width:361px){
+  .ham{
+    display: none;
+  }
+  .header{
+    color: var(--White);
+    font-size: 1.2rem;
+    display: flex;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 45%;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .navbar .navbar-item{
+    margin-right: 15px;
+  }
+  .navbar ul{
+    height: 40px;
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+  }
+  .logo img{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  .splide__slide{
+    display: flex;
+  }
+  .splide__slide .flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .splide__slide h2{
+    font-size: 2rem;
+  }
+  .splide__slide p{
+    font-size: 1.2rem;
+    color: var(--Dark-Gray);
+  }
+  .splide__slide h3{
+    font-size: 1.5rem;
+  }
+  .splide__slide h2,h3,p{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .splide__slide img{
+    max-width: 100%;
+    width: 500px;
+    height: 500px;
+  }
+  .about{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1.5fr;
+  }
+  .about .info{
+    text-align: justify;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+  }
+  .about .info h2{
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .about .info p{
+    color: var(--Dark-Gray);
+  }
+  .attribution {
+    background-color: royalblue;
+    margin-top: -5px;
+    text-align: center;
+  }
+
+  .attribution a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: lime;
   }
 }

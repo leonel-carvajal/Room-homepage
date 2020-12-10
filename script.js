@@ -16,11 +16,10 @@ const slide = () => {
   new Splide('.splide',
     {
       type: 'loop',
-      focus: 'center',
       perPage: 1,
       perMove: 1,
       keyboard: true,
-      speed: 1000
+      speed: 1000,
     }
   ).mount(
   );
